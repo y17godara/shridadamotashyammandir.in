@@ -13,84 +13,82 @@ export function MainNav() {
   return (
     <div className="hidden md:flex gap-4 lg:gap-6 items-center">
       <Link
-        href="/docs"
+        href="#home"
         className={cn(
           "transition-colors hover:text-foreground/80",
-          pathname === "/docs" ? "text-foreground" : "text-foreground/60"
+          pathname === "/" ? "text-foreground" : "text-foreground/60"
         )}
       >
-        Docs
+        Home
       </Link>
       <Link
-        href="/docs/components"
+        href="#about"
         className={cn(
           "transition-colors hover:text-foreground/80",
-          pathname?.startsWith("/docs/components") &&
-            !pathname?.startsWith("/docs/component/chart")
+          pathname?.startsWith("#about")
             ? "text-foreground"
             : "text-foreground/60"
         )}
       >
-        Components
+        About
       </Link>
       <Link
-        href="/blocks"
+        href="#events"
         className={cn(
           "transition-colors hover:text-foreground/80",
-          pathname?.startsWith("/blocks")
+          pathname?.startsWith("#events")
             ? "text-foreground"
             : "text-foreground/60"
         )}
       >
-        Blocks
+        Events
       </Link>
       <Link
         href="/"
         className={cn(
-          "mx-4 gap-2 flex items-center lg:mx-6",
+          "mx-4 gap-2 flex flex-col items-center lg:mx-6",
           fontSans.className
         )}
       >
         <div>
           <Icons.logo className="h-6 w-6" />
         </div>
-        <span className="hidden font-bold lg:inline-block">
-          Shri Dada Mote Shri Shyam Ji Mandir
+        <span className="hidden text-xs font-bold lg:inline-block uppercase">
+          Shri Dada Mota Shri Shyam Ji Mandir
         </span>
       </Link>
       <Link
-        href="/charts"
+        href="#donate"
         className={cn(
           "transition-colors hover:text-foreground/80",
-          pathname?.startsWith("/docs/component/chart") ||
-            pathname?.startsWith("/charts")
+          pathname?.startsWith("#donate")
             ? "text-foreground"
             : "text-foreground/60"
         )}
       >
-        Charts
+        Donate
       </Link>
       <Link
-        href="/themes"
+        href="#contact"
         className={cn(
           "transition-colors hover:text-foreground/80",
-          pathname?.startsWith("/themes")
+          pathname?.startsWith("#contact")
             ? "text-foreground"
             : "text-foreground/60"
         )}
       >
-        Themes
+        Contact
       </Link>
       <Link
-        href="/examples"
+        href="#services"
         className={cn(
           "transition-colors hover:text-foreground/80",
-          pathname?.startsWith("/examples")
+          pathname?.startsWith("#services")
             ? "text-foreground"
             : "text-foreground/60"
         )}
       >
-        Examples
+        Services
       </Link>
     </div>
   )
