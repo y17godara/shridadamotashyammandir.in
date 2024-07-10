@@ -46,15 +46,18 @@ export function MainNav() {
       <Link
         href="/"
         className={cn(
-          "mx-4 gap-2 flex flex-col items-center lg:mx-6",
+          "relative mx-4 gap-2 flex flex-col items-center lg:mx-6 w-28",
           fontSans.className
         )}
       >
-        <div>
+        <div className="flex justify-center text-[#9a6270] bg-opacity-50">
           <Icons.logo className="h-6 w-6" />
         </div>
-        <span className="hidden text-xs font-bold lg:inline-block uppercase">
-          Shri Dada Mota Shri Shyam Ji Mandir
+        <span className={cn("absolute bottom-1/2 left-1/2 hidden text-base md:text-lg font-bold lg:inline-block uppercase",
+          "transform -translate-x-1/2 translate-y-1/2",
+          "whitespace-nowrap text-foreground/60",
+        )}>
+          Jai Shri Shyam 
         </span>
       </Link>
       <Link
@@ -78,17 +81,6 @@ export function MainNav() {
         )}
       >
         Contact
-      </Link>
-      <Link
-        href="#services"
-        className={cn(
-          "transition-colors hover:text-foreground/80",
-          pathname?.startsWith("#services")
-            ? "text-foreground"
-            : "text-foreground/60"
-        )}
-      >
-        Services
       </Link>
     </div>
   )

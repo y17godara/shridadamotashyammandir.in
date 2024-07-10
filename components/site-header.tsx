@@ -22,7 +22,7 @@ export function SiteHeader() {
         </div>
         <div
           className={cn(
-            "flex items-center gap-2 sm:gap-4 lg:gap-6",
+            "flex items-center gap-2 ml-4 lg:ml-6 sm:gap-4 lg:gap-6",
             "md:justify-end"
           )}
         >
