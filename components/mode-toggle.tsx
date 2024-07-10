@@ -1,6 +1,8 @@
 "use client"
 
 import * as React from "react"
+import { usePathname, useRouter } from "next/navigation"
+import { Locale, getFlagIcon, i18n } from "@/i18n.config"
 import { Button } from "@/ui/button"
 import {
   DropdownMenu,
@@ -9,11 +11,12 @@ import {
   DropdownMenuTrigger,
 } from "@/ui/dropdown-menu"
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons"
+import { LanguagesIcon } from "lucide-react"
 import { useTheme } from "next-themes"
 
 import { cn } from "@/lib/utils"
 
-export function ModeToggle({ className }: { className?: string }) {
+export function ThemeToggle({ className }: { className?: string }) {
   const { setTheme } = useTheme()
 
   return (
@@ -35,6 +38,46 @@ export function ModeToggle({ className }: { className?: string }) {
         <DropdownMenuItem onClick={() => setTheme("system")}>
           System
         </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
+  )
+}
+
+export function LangToggle({ className }: { className?: string }) {
+  const router = useRouter()
+  const pathName = usePathname()
+
+  const currentLocale: Locale = pathName.split("/")[1] as Locale
+
+  const redirectedPathName = (locale: Locale) => {
+    if (!pathName) return "/"
+    const segments = pathName.split("/")
+    segments[1] = locale
+    return segments.join("/")
+  }
+
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="ghost" className={cn("h-8 w-8 px-0", className)}>
+          <LanguagesIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+          <LanguagesIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+          <span className="sr-only">Toggle theme</span>
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end">
+        {i18n.locales.map((locale) => (
+          <DropdownMenuItem
+            key={locale}
+            onClick={() => {
+              const newPath = redirectedPathName(locale)
+              router.push(newPath)
+            }}
+          >
+            {getFlagIcon(locale)}
+            {locale}
+          </DropdownMenuItem>
+        ))}
       </DropdownMenuContent>
     </DropdownMenu>
   )

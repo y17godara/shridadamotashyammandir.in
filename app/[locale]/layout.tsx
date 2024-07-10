@@ -6,8 +6,13 @@ import { fontSans } from "@/config/fonts"
 import { SiteMetadata } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { TailwindIndicator } from "@/components/dev/tailwind-indicator"
-import { ThemeProvider } from "@/components/provider"
+import { Provider } from "@/components/provider"
 import { ThemeSwitcher } from "@/components/theme-switcher"
+import { Locale, i18n } from '@/i18n.config'
+
+export async function generateStaticParams() {
+  return i18n.locales.map(locale => ({ lang: locale }))
+}
 
 export const metadata: Metadata = {
   ...SiteMetadata,
@@ -15,32 +20,35 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode
+  params: { locale: Locale }
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html 
+      lang={params.locale}
+      dir="ltr"
+      suppressHydrationWarning
+    >
       <head />
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          "relative flex flex-col min-h-screen bg-background font-sans antialiased",
           fontSans.variable
         )}
       >
-        <ThemeProvider
+        <Provider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
+          params={params}
         >
-          <div vaul-drawer-wrapper="">
-            <div className="relative flex min-h-screen flex-col bg-background">
-              {children}
-            </div>
-          </div>
+          {children}
           <TailwindIndicator />
           <ThemeSwitcher />
-        </ThemeProvider>
+        </Provider>
       </body>
     </html>
   )

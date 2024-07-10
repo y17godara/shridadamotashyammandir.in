@@ -1,12 +1,11 @@
 import Link from "next/link"
-import { buttonVariants } from "@/ui/button"
 
 import { cn } from "@/lib/utils"
 
 import { Icons } from "./icons"
 import { MainNav } from "./main-nav"
 import { MobileNav } from "./mobile-nav"
-import { ModeToggle } from "./mode-toggle"
+import { ThemeToggle, LangToggle } from "./mode-toggle"
 
 export function SiteHeader() {
   return (
@@ -21,7 +20,15 @@ export function SiteHeader() {
             </div>
           </Link>
         </div>
-        <ModeToggle className="ml-4 lg:ml-6" />
+        <div
+          className={cn(
+            "flex items-center gap-2 sm:gap-4 lg:gap-6",
+            "md:justify-end"
+          )}
+        >
+        <ThemeToggle />
+        <LangToggle />
+        </div>
       </div>
     </header>
   )
