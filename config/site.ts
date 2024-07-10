@@ -18,12 +18,12 @@ const DEFAULT_DATA = {
     },
     {
       name: "Mayank Godara",
-      username: "",
+      username: "godara20",
       email: "mayankgodara111@gmail.com",
-      url: "",
+      url: "https://github.com/godara20",
       links: {
         twitter: "",
-        github: "",
+        github: "https://github.com/godara20",
       },
     },
   ],

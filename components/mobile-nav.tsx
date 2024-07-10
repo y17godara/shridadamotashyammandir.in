@@ -37,49 +37,23 @@ export function MobileNav() {
           </span>
           <span className="font-bold text-lg sm:hidden">Welcome</span>
         </MobileLink>
-        <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
+        <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10">
           <div className="flex flex-col space-y-3">
-            {/* {docsConfig.mainNav?.map(
-              (item) =>
-                item.href && (
-                  <MobileLink
-                    key={item.href}
-                    href={item.href}
-                    onOpenChange={setOpen}
-                  >
-                    {item.title}
-                  </MobileLink>
-                )
-            )} */}
-          </div>
-          <div className="flex flex-col space-y-2">
-            {/* {docsConfig.sidebarNav.map((item, index) => (
-              <div key={index} className="flex flex-col space-y-3 pt-6">
-                <h4 className="font-medium">{item.title}</h4>
-                {item?.items?.length &&
-                  item.items.map((item) => (
-                    <React.Fragment key={item.href}>
-                      {!item.disabled &&
-                        (item.href ? (
-                          <MobileLink
-                            href={item.href}
-                            onOpenChange={setOpen}
-                            className="text-muted-foreground"
-                          >
-                            {item.title}
-                            {item.label && (
-                              <span className="ml-2 rounded-md bg-[#adfa1d] px-1.5 py-0.5 text-xs leading-none text-[#000000] no-underline group-hover:no-underline">
-                                {item.label}
-                              </span>
-                            )}
-                          </MobileLink>
-                        ) : (
-                          item.title
-                        ))}
-                    </React.Fragment>
-                  ))}
-              </div>
-            ))} */}
+            <MobileLink href={'/'} onOpenChange={setOpen}>
+              <span>Home</span>
+            </MobileLink>
+            <MobileLink href={'#about'} onOpenChange={setOpen}>
+              <span>About</span>
+            </MobileLink>
+            <MobileLink href={'#services'} onOpenChange={setOpen}>
+              <span>Event</span>
+            </MobileLink>
+            <MobileLink href={'#donate'} onOpenChange={setOpen}>
+              <span>Donate</span>
+            </MobileLink>
+            <MobileLink href={'#contact'} onOpenChange={setOpen}>
+              <span>Contact</span>
+            </MobileLink>
           </div>
         </ScrollArea>
       </SheetContent>

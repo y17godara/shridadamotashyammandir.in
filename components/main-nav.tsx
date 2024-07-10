@@ -53,7 +53,7 @@ export function MainNav() {
         <div className="flex justify-center text-[#9a6270] bg-opacity-50">
           <Icons.logo className="h-6 w-6" />
         </div>
-        <span className={cn("absolute bottom-1/2 left-1/2 hidden text-base md:text-lg font-bold lg:inline-block uppercase",
+        <span className={cn("absolute bottom-1/2 left-1/2 hidden text-base md:text-lg font-bold md:inline-block uppercase",
           "transform -translate-x-1/2 translate-y-1/2",
           "whitespace-nowrap text-foreground/60",
         )}>
