@@ -3,7 +3,6 @@ import { Locale } from "@/i18n.config"
 
 import { getDictionary } from "@/lib/dictionary"
 import ImageSlider from "@/components/hero-image"
-import { HeroSlider } from "@/components/hero-slider"
 import Readmore from "@/components/read-more"
 
 export default async function Page({ params }: { params: { locale: Locale } }) {

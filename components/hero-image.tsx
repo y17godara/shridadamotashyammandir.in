@@ -4,6 +4,7 @@ import React, { useCallback } from "react"
 import { EmblaCarouselType, EmblaOptionsType } from "embla-carousel"
 import Autoplay from "embla-carousel-autoplay"
 import useEmblaCarousel from "embla-carousel-react"
+import { ChevronLeft, ChevronRight } from "lucide-react"
 
 type PropType = {
   slides: number[]
@@ -45,7 +46,7 @@ export default function EmblaCarousel() {
         className="!border-none h-full flex flex-col relative embla__viewport !w-full !max-w-full"
         ref={emblaRef}
       >
-        <div className="h-full embla__container rounded-xl">
+        <div className="relative h-full embla__container rounded-xl">
           {HeroImages.map((image) => (
             <div
               className="embla__slide mx-4 overflow-hidden rounded-xl"
@@ -55,39 +56,28 @@ export default function EmblaCarousel() {
                 className="object-cover h-full w-full"
                 src={image.src}
                 alt={image.alt}
+                loading="eager"
               />
             </div>
           ))}
         </div>
-      </div>
 
-      <div className="embla__controls">
-        <div className="embla__buttons">
-          <button
-            className="w-20 bg-black px-2 py-1 text-sm text-white"
-            onClick={scrollPrev}
-          >
-            Prev
-          </button>
-          <button
-            className="w-20 bg-black px-2 py-1 text-sm text-white"
-            onClick={scrollNext}
-          >
-            Next
-          </button>
+        <div className="flex flex-row gap-2 justify-end absolute bottom-4 right-4">
+          <div className="embla__buttons">
+            <button
+              className="flex justify-center items-center text-center size-12 xl:size-20 bg-gradient-to-br from-black via-transparent to-gray-800 px-2 py-1 text-sm text-white rounded-full"
+              onClick={scrollPrev}
+            >
+              <ChevronLeft size={20} />
+            </button>
+            <button
+              className="flex justify-center items-center text-center size-12 xl:size-20 bg-gradient-to-br from-black via-transparent to-gray-800 px-2 py-1 text-sm text-white rounded-full"
+              onClick={scrollNext}
+            >
+              <ChevronRight size={20} />
+            </button>
+          </div>
         </div>
-
-        {/* <div className="embla__dots">
-          {scrollSnaps.map((_, index) => (
-            <DotButton
-              key={index}
-              onClick={() => onDotButtonClick(index)}
-              className={'embla__dot'.concat(
-                index === selectedIndex ? ' embla__dot--selected' : ''
-              )}
-            />
-          ))}
-        </div> */}
       </div>
     </div>
   )
