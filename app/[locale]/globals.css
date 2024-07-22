@@ -69,9 +69,11 @@
   * {
     @apply border-border;
   }
+
   html {
-    @apply scroll-smooth;
+    scroll-behavior: smooth;
   }
+
   body {
     @apply bg-background text-foreground;
     /* font-feature-settings: "rlig" 1, "calt" 1; */
@@ -195,4 +197,11 @@
   .container {
     @apply px-4;
   }
+}
+
+html::-webkit-scrollbar {
+  scrollbar-width: thin;
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

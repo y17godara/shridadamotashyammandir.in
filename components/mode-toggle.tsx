@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { usePathname, useRouter } from "next/navigation"
-import { Locale, getFlagIcon, i18n } from "@/i18n.config"
+import { getFlagIcon, i18n, Locale } from "@/i18n.config"
 import { Button } from "@/ui/button"
 import {
   DropdownMenu,
@@ -59,24 +59,30 @@ export function LangToggle({ className }: { className?: string }) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" className={cn("h-8 w-8 px-0 hover:bg-primary-foreground focus:bg-primary", className)}>
+        <Button
+          variant="ghost"
+          className={cn(
+            "h-8 w-32 px-0 hover:bg-primary-foreground focus:bg-primary",
+            className
+          )}
+        >
           <LanguagesIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
           <LanguagesIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-          <span className="sr-only">Toggle theme</span>
+          <span className="sr-only">Toggle language</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="bg-background border-primary">
         {i18n.locales.map((locale) => (
           <DropdownMenuItem
             key={locale}
-            className="border-primary hover:bg-primary-foreground focus:bg-primary-foreground"
+            className="border-primary hover:bg-primary-foreground text-center justify-center items-center focus:bg-primary-foreground"
             onClick={() => {
               const newPath = redirectedPathName(locale)
               router.push(newPath)
             }}
           >
-            {getFlagIcon(locale)}
-            {locale}
+            {/* {getFlagIcon(locale)} */}
+            {locale === "en-IN" ? "English" : "हिन्दी"}
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

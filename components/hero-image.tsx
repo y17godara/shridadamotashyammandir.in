@@ -1,15 +1,9 @@
 "use client"
 
 import React, { useCallback } from "react"
-import { EmblaCarouselType, EmblaOptionsType } from "embla-carousel"
 import Autoplay from "embla-carousel-autoplay"
 import useEmblaCarousel from "embla-carousel-react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-
-type PropType = {
-  slides: number[]
-  options?: EmblaOptionsType
-}
 
 const HeroImages = [
   {
@@ -43,13 +37,13 @@ export default function EmblaCarousel() {
   return (
     <div className="relative !w-screen !max-w-full p-2 md:p-10 !h-[40vh] md:!h-[75vh] !mt-0 embla">
       <div
-        className="!border-none h-full flex flex-col relative embla__viewport !w-full !max-w-full"
+        className="!border-none h-full flex flex-col relative embla__viewport rounded-xl overflow-hidden !w-full !max-w-full"
         ref={emblaRef}
       >
         <div className="relative h-full embla__container rounded-xl">
           {HeroImages.map((image) => (
             <div
-              className="embla__slide mx-4 overflow-hidden rounded-xl"
+              className="embla__slide mx-0.5 lg:mx-1 overflow-hidden rounded-xl"
               key={image.id}
             >
               <img
