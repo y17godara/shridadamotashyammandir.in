@@ -125,6 +125,49 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
             </BentoGrid>
           </div>
         </section>
+
+        <section id="events" className="w-full p-2 md:p-10">
+          <div
+            className="flex flex-col items-center justify mt-10
+          -center container w-full gap-4"
+          >
+            <div className="flex flex-col items-start justify-start w-full">
+              <h1 className="text-4xl sm:text-5xl font-bold">
+                Donate for Development of Temple
+              </h1>
+              <h2 className="">
+                Below Mentioned are the officail bank details of the temple for
+                donations and contributions towards the development of the
+                temple, events and activities.
+              </h2>
+
+              <div className="flex flex-col items-start justify-start gap-0.5 text-start text-pretty mt-2 lg:mt-4 w-full">
+                <table>
+                  <tr>
+                    <th>Bank Name</th>
+                    <th>Account Number</th>
+                    <th>IFSC Code</th>
+                  </tr>
+                  <tr>
+                    <td>State Bank of India</td>
+                    <td>XXXXXXXXXXXXXX</td>
+                    <td>XXXXXXXX</td>
+                  </tr>
+                  <tr>
+                    <td>State Bank of India</td>
+                    <td>XXXXXXXXXXXXXX</td>
+                    <td>XXXXXXXX</td>
+                  </tr>
+                  <tr>
+                    <td>State Bank of India</td>
+                    <td>XXXXXXXXXXXXXX</td>
+                    <td>XXXXXXXX</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </>
   )
