@@ -194,7 +194,8 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
                     <td className="px-4 py-3 font-semibold">UPI Transfer</td>
                     <td className="px-4 py-3">
                       <p>
-                        <span className="font-semibold">UPI ID:</span> 98@cnrb
+                        <span className="font-semibold">UPI ID:</span>{" "}
+                        9888886974@cnrb
                       </p>
                     </td>
                   </tr>
@@ -202,16 +203,20 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
                     <td className="px-4 py-3 font-semibold">Bank Transfer</td>
                     <td className="px-4 py-3">
                       <p>
-                        <span className="font-semibold">Bank Name:</span> [Bank
-                        Name Here]
+                        <span className="font-semibold">Bank Name:</span> Canara
+                        Bank
                       </p>
                       <p>
-                        <span className="font-semibold">IFSC Code:</span> [IFSC
-                        Code Here]
+                        <span className="font-semibold">IFSC Code:</span>{" "}
+                        CNRB0019143
+                      </p>
+                      <p>
+                        <span className="font-semibold">Account Name:</span>{" "}
+                        Shri Data Mota Shri Shyamji Mandir Samiti
                       </p>
                       <p>
                         <span className="font-semibold">Account Number:</span>{" "}
-                        [Account Number Here]
+                        91432010020229
                       </p>
                     </td>
                   </tr>
