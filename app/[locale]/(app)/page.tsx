@@ -3,16 +3,49 @@ import Image from "next/image"
 import Events, { EventType } from "@/data/events"
 import { Locale } from "@/i18n.config"
 import { BentoGrid } from "@/ui/bento-grid"
-import { PiBellDuotone, PiBellRingingDuotone } from "react-icons/pi"
+import { PiBellDuotone } from "react-icons/pi"
 
 import { getDictionary } from "@/lib/dictionary"
 import { cn } from "@/lib/utils"
 import ImageSlider from "@/components/hero-image"
 import Readmore from "@/components/read-more"
 
+const DummyContent = () => {
+  return (
+    <>
+      {[...new Array(3).fill(1)].map((_, index) => {
+        return (
+          <div
+            key={"dummy-content" + index}
+            className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+          >
+            <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+              <span className="font-bold text-neutral-700 dark:text-neutral-200">
+                The first rule of Apple club is that you boast about Apple club.
+              </span>{" "}
+              Keep a journal, quickly jot down a grocery list, and take amazing
+              class notes. Want to convert those notes to text? No problem.
+              Langotiya jeetu ka mara hua yaar is ready to capture every
+              thought.
+            </p>
+            <Image
+              src=""
+              alt="Macbook mockup from Aceternity UI"
+              height="500"
+              width="500"
+              className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
+            />
+          </div>
+        )
+      })}
+    </>
+  )
+}
+
 export default async function Page({ params }: { params: { locale: Locale } }) {
   const dict = await getDictionary(params.locale) // en
   // return <button>{dict.products.cart}</button> // Add to Cart
+
   return (
     <>
       <div className="flex flex-col justify-center">
@@ -223,6 +256,20 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
                 </tbody>
               </table>
             </div>
+          </div>
+        </section>
+
+        <section className="relative w-full p-2 md:p-10">
+          <span id="gallery" className="absolute -top-10"></span>
+          <div className="flex flex-col items-center justify-center container w-full gap-4 mt-10">
+            <div className="flex flex-col items-start justify-start w-full">
+              <h1 className="text-4xl sm:text-5xl font-bold">Gallery</h1>
+              <h2 className="mt-2 text-lg">
+                Some of the beautiful memories and moments captured at the
+                temple
+              </h2>
+            </div>
+            <div className="overflow-x-auto w-full scrollbar-thin scrollbar-thumb-rose-950 scrollbar-track-rose-900"></div>
           </div>
         </section>
       </div>
