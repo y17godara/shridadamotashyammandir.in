@@ -93,11 +93,90 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
                   beautiful architecture and design.
                 </p>
                 <Readmore>
-                  <section className="container px-2.5 sm:px-10 py-5 ">
-                    The temple is a place of worship for thousands of devotees
-                    every month. The temple is known for its beautiful and
-                    peaceful environment. The temple is also known for its
-                    beautiful architecture and design.
+                  <section className="relative container px-2.5 sm:px-10 py-10 overflow-y-scroll scrollbar-thin scrollbar-thumb-rose-950 scrollbar-track-rose-900">
+                    <h2 className="relative text-2xl sm:text-3xl font-bold my-4 leading-tight">
+                      Shri Data Mote Shri Shyam Ji Mandir
+                      <h1
+                        className={
+                          "absolute -top-7 -left-1 text-xs px-1.5 py-0.5 sm:text-sm font-bold underline underline-offset-2 border-2 rounded-xl bg-rose-950 border-rose-950"
+                        }
+                      >
+                        History
+                      </h1>
+                    </h2>
+
+                    <div className="text-pretty">
+                      <p>
+                        🙏🙏🙏Jay Dada Mota 🙏🙏Jay Shri Shyam... Ham aapko Dada
+                        Mota Shri Shyam Mandir Itihaas ke bare mein Jankari
+                        Denge... Jo Hamen Gaon wale Bade bujurgon Apne
+                        sahyogiyon dwara Hamen Mili Hai... Jankari is Prakar hai
+                        baat bahut purane Samay Ki Hai.... bharthal Gaon bahut
+                        hi khushhal AVN sampann Gaon tha .... mukhya vyavsay
+                        kheti hone ke Karan Charon Taraf Hariyali hi Hariyali
+                        thi ...Gaon Ke Log aapas mein bahut miljul kar Rahte the
+                        aur Dukh Sukh Mein Ek dusre ka Sahyog Karte The gaon
+                        gaon ki tarah Nahin Parivar Ki Tarah rahata tha. ...
+                        Samay ki vidambna Ke Karan Gaon Mein Sukha Pada sukhe Ke
+                        Karan Jameen sukhne Lag Gai mahvari fail Gai .... Jiske
+                        Karan Gaon Walon Jeev jantuon ko bahut sari taklifo ka
+                        samna karna Pada... ine sab se chhutkara pane ke liye
+                        Gaon Walon Ne Havan Pujan Shuru Kiya. .... Havan Puja
+                        paath se Kuchh fayda na hone ke Karan Gaon wale Pareshan
+                        Rahane Lage Aur Gaon chhodkar Jaane per majbur ho rahe
+                        the. ... UN Dinon Gaon Mein Ek Yuva Sadhu ka aagman hua.
+                        ... vah sadhu baba gaon ke andar Bani Chaupal Mein
+                        rahata Tha. ... sadhu baba ne Kuchh Samay bad apne
+                        Swayam ke tap ke liye gaon ke bahar jakar Ek jhopadi
+                        Banai... aur vahan Ekant mein rahe kar tab karne Lag
+                        Gaye... Gaon wale unke tapasvi Jivan Ko Dekhkar unke
+                        pass jakar baithane Lag Gaye aur thoda bahut Kuchh khane
+                        ko le Jaane Lag Gaye. .. Samay Bita Gaya Baba Gaon walon
+                        ki samasyaon ka Samadhan karne laagye..... Bujurg AVN
+                        healthy hone ke Karan Gaon Walon Ne unko Dada Mota Naam
+                        Diya. ...
+                      </p>
+                      <p>
+                        Ek Bar Ki Baat Hai Dada Mota apni Tapasya Mein leen the
+                        aur Virodhi tatvon Ne Unki jhopadi Mein Aag Lagadi.....
+                        jhopadi Puri Jal Gai per Baba ko thodi si bhi Aanch
+                        Nahin lagi..... is Prakar unhone Anek Chamatkar
+                        dikhlaayen. ... UN Dinon Baba Khatu Shyam ji ka Bhavya
+                        Mela aur kushtia hoti thi. ... Dada Mota ji ke Sahyog
+                        aur Gaon Walon ke dwara Khatu Shyam Mela Jita gaya tha
+                        .....barthal Gaon Mein Shyam Baba ki Murti Dada Ke
+                        Sahyog se sthapit Ki Gai thi. .. Ek Bar Ki Baat Hai Gaon
+                        Mein pashuon ke dudh ki jagah Khoon Ki Dhaar nikalne
+                        Lagi.... Gaon WaleHai Dekh Kar bahut Pareshan ho gaye
+                        aur Dada ke pass Aaye... Dada ke Samay Ek Jod ka Nirman
+                        karaya gaya tha Jiska Naam Malah Jod tha ...... Dada ne
+                        bataya yahan se Pani Le jakar pashuon per chhidak do sab
+                        theek ho jaega. ... Aur Aisa Hi Hua Sab Pashu theek ho
+                        gaye. ... Sabhi Gaon wale Khush hokar Dada ke pass bahut
+                        dudh Lekar Aaye. .. Dada Ne UN sabka man rakhte Hue
+                        thoda dudh apne pass Rakh liya aur Baki unko De Diya Aur
+                        Kahan jakar Ke khir bnao Khatu Shyam baba Ko Bhog lagao
+                        bacchon ko khilao aur aap bhi Khao... aur Aise Samay
+                        Bitta Gaya Dada Samadhi lagakar Baithe baithe smadisht
+                        ho gaye ... aur Jahan per Dada samadhisht Hue The vahin
+                        per Aaj Baba ki Samadhi hai. .. aur Aaj Bhi Gaon Wale
+                        Baba ko pura Man Se Puja paath Karte Hain aur Unki
+                        manokamna purn hoti hai. ..Tab Se Hi Gaon Mein Bhavya
+                        Mele ka aayojan hota hai yah Mela faagun Mass ki
+                        Ekadashi Aur dvadashi Ko hota hai aur Yahan per
+                        kushtiyon ka bhi aayojan kiya jata hai. .... aur
+                        Ekadashi Wale Din gaon ki mahilayen Vrat aur Puja Karti
+                        Hain aur yah Parampara Usi Samay se Chali a rahi hai aur
+                        Aaj Bhi Ho Rahi Hai. .... Aaj Bhi dvadashi Wale Din khir
+                        Ka Prasad Banaya aur Khilaya jata hai. .. aur itwar Wale
+                        Din Dada Mota Mandi per gud ka Prasad chadhaya Jata aur
+                        khaya jata hai. .. aur Aaj Bhi anekon tyohar Badi
+                        dhumdham se Manaya Jaate Hain ....Gaon wale aur Gaon se
+                        bahar se aane wale logon ke Prati is Mandir ko Lekar
+                        bahut hi Shradha hai... aur Yahan per Aane walon ki
+                        manokamnaen puri hoti hain
+                      </p>
+                    </div>
                   </section>
                 </Readmore>
               </div>
