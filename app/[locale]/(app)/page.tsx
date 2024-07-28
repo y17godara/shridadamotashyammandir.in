@@ -230,7 +230,7 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
   )
 }
 
-export const BentoGridItem = ({
+const BentoGridItem = ({
   className,
   title,
   description,
