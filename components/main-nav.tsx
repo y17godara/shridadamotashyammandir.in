@@ -33,15 +33,15 @@ export function MainNav() {
         About
       </Link>
       <Link
-        href="#events"
+        href="#timing"
         className={cn(
           "transition-colors hover:text-foreground/80",
-          pathname?.startsWith("#events")
+          pathname?.startsWith("#timing")
             ? "text-foreground"
             : "text-foreground/60"
         )}
       >
-        Events
+        Timing
       </Link>
       <Link
         href="/"
@@ -53,12 +53,26 @@ export function MainNav() {
         <div className="flex justify-center text-[#9a6270] bg-opacity-50">
           <Icons.logo className="h-6 w-6" />
         </div>
-        <span className={cn("absolute bottom-1/2 left-1/2 hidden text-base md:text-lg font-bold md:inline-block uppercase",
-          "transform -translate-x-1/2 translate-y-1/2",
-          "whitespace-nowrap text-foreground/60",
-        )}>
-          Jai Shri Shyam 
+        <span
+          className={cn(
+            "absolute bottom-1/2 left-1/2 hidden text-base md:text-lg font-bold md:inline-block uppercase",
+            "transform -translate-x-1/2 translate-y-1/2",
+            "whitespace-nowrap text-foreground/60"
+          )}
+        >
+          Jai Shri Shyam
         </span>
+      </Link>
+      <Link
+        href="#events"
+        className={cn(
+          "transition-colors hover:text-foreground/80",
+          pathname?.startsWith("#events")
+            ? "text-foreground"
+            : "text-foreground/60"
+        )}
+      >
+        Events
       </Link>
       <Link
         href="#donate"
@@ -70,17 +84,6 @@ export function MainNav() {
         )}
       >
         Donate
-      </Link>
-      <Link
-        href="#contact"
-        className={cn(
-          "transition-colors hover:text-foreground/80",
-          pathname?.startsWith("#contact")
-            ? "text-foreground"
-            : "text-foreground/60"
-        )}
-      >
-        Contact
       </Link>
     </div>
   )

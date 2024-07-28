@@ -1,10 +1,12 @@
 import { Suspense } from "react"
+import Image from "next/image"
 import Events, { EventType } from "@/data/events"
 import { Locale } from "@/i18n.config"
-import { BentoGrid, BentoGridItem } from "@/ui/bento-grid"
+import { BentoGrid } from "@/ui/bento-grid"
 import { PiBellDuotone, PiBellRingingDuotone } from "react-icons/pi"
 
 import { getDictionary } from "@/lib/dictionary"
+import { cn } from "@/lib/utils"
 import ImageSlider from "@/components/hero-image"
 import Readmore from "@/components/read-more"
 
@@ -18,7 +20,8 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
           <ImageSlider />
         </Suspense>
 
-        <section id="about" className="w-full p-2 md:p-10">
+        <section className="relative w-full p-2 md:p-10">
+          <span id="about" className="absolute -top-10"></span>
           <div
             className="flex flex-col items-center justify mt-10
           -center container w-full"
@@ -56,46 +59,85 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
                   peaceful environment. The temple is also known for its
                   beautiful architecture and design.
                 </p>
-                <Readmore content="The temple is a place of worship for thousands of devotees every month. The temple is known for its beautiful and peaceful environment. The temple is also known for its beautiful architecture and design.">
-                  <button className="text-sm lg:text-base font-semibold text-foreground bg-background p-2 rounded-lg">
-                    Read More
-                  </button>
+                <Readmore>
+                  <section className="container px-2.5 sm:px-10 py-5 ">
+                    The temple is a place of worship for thousands of devotees
+                    every month. The temple is known for its beautiful and
+                    peaceful environment. The temple is also known for its
+                    beautiful architecture and design.
+                  </section>
                 </Readmore>
-              </div>
-
-              <div className="flex mt-2 lg:mt-4 flex-col items-start justify-start text-start gap-0.5 text-pretty">
-                <p className="flex flex-row items-center gap-1 text-sm lg:text-base font-semibold text-pretty">
-                  <PiBellRingingDuotone className="size-4" />{" "}
-                  <b className="font-bold">Darshan Timing:</b>
-                  <br />
-                  <span className="text-sm lg:text-base font-semibold">
-                    04:00 AM to 10:00 PM
-                  </span>
-                </p>
-
-                <p className="flex flex-row items-center gap-1 text-sm lg:text-base font-semibold text-pretty">
-                  <PiBellRingingDuotone className="size-4" />{" "}
-                  <b className="font-bold">Morning Aarti Timing:</b>
-                  <br />
-                  <span className="text-sm lg:text-base font-semibold">
-                    07:00 AM to 08:00 AM
-                  </span>
-                </p>
-
-                <p className="flex flex-row items-center gap-1 text-sm lg:text-base font-semibold text-pretty">
-                  <PiBellRingingDuotone className="size-4" />{" "}
-                  <b className="font-bold">Evening Aarti Timing:</b>
-                  <br />
-                  <span className="text-sm lg:text-base font-semibold">
-                    07:00 PM to 08:00 PM
-                  </span>
-                </p>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="events" className="w-full p-2 md:p-10">
+        <section className="relative w-full p-2 md:p-10">
+          <span id="timing" className="absolute -top-10"></span>
+          <div
+            className="flex flex-col items-center justify mt-10
+          -center container w-full gap-4"
+          >
+            <div className="flex flex-col items-start justify-start w-full">
+              <h1 className="text-4xl sm:text-5xl font-bold">
+                Mandir Darshan Timings
+              </h1>
+              <h2 className="">
+                Below mentioned are the darshan timings and aarti timings of the
+                temple this could be subject to change during special or festive
+                days.
+              </h2>
+            </div>
+            <div className="overflow-x-scroll md:overflow-x-hidden container scrollbar-thin scrollbar-thumb-rose-950 scrollbar-track-rose-900">
+              <table className="w-full text-sm lg:text-base">
+                <thead>
+                  <tr className="border-b border-rose-950 whitespace-nowrap">
+                    <th className="px-4 py-3 text-left">Season</th>
+                    <th className="px-4 py-3 text-left">Darshan Timing</th>
+                    <th className="px-4 py-3 text-left">Opening</th>
+                    <th className="px-4 py-3 text-left">Closing</th>
+                    <th className="px-4 py-3 text-left">Aarti Timing</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-rose-950 whitespace-nowrap">
+                    <td rowSpan={2} className="px-4 py-3 font-semibold">
+                      Summer
+                    </td>
+                    <td className="px-4 py-3 font-semibold">Morning</td>
+                    <td className="px-4 py-3">05:00 AM</td>
+                    <td className="px-4 py-3">11:00 AM</td>
+                    <td className="px-4 py-3">07:00 AM to 08:00 AM</td>
+                  </tr>
+                  <tr className="border-b border-rose-950 whitespace-nowrap">
+                    <td className="px-4 py-3 font-semibold">Evening</td>
+                    <td className="px-4 py-3">05:00 AM</td>
+                    <td className="px-4 py-3">09:00 PM</td>
+                    <td className="px-4 py-3">07:00 PM to 08:00 PM</td>
+                  </tr>
+                  <tr className="border-b border-rose-950 whitespace-nowrap">
+                    <td rowSpan={2} className="px-4 py-3 font-semibold">
+                      Winter
+                    </td>
+                    <td className="px-4 py-3 font-semibold">Morning</td>
+                    <td className="px-4 py-3">06:00 AM</td>
+                    <td className="px-4 py-3">10:00 AM</td>
+                    <td className="px-4 py-3">07:30 AM to 08:30 AM</td>
+                  </tr>
+                  <tr className="border-b border-rose-950 whitespace-nowrap">
+                    <td className="px-4 py-3 font-semibold">Evening</td>
+                    <td className="px-4 py-3">04:00 PM</td>
+                    <td className="px-4 py-3">08:00 PM</td>
+                    <td className="px-4 py-3">06:30 PM to 07:30 PM</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section className="relative w-full p-2 md:p-10">
+          <span id="events" className="absolute -top-10"></span>
           <div
             className="flex flex-col items-center justify mt-10
           -center container w-full gap-4"
@@ -112,7 +154,7 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
             <BentoGrid className="mx-auto">
               {Events.map((item: EventType, i: number) => (
                 <BentoGridItem
-                  key={i}
+                  key={i + item.title}
                   title={item.title}
                   description={item.description}
                   header={item.header}
@@ -126,49 +168,109 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
           </div>
         </section>
 
-        <section id="events" className="w-full p-2 md:p-10">
-          <div
-            className="flex flex-col items-center justify mt-10
-          -center container w-full gap-4"
-          >
+        <section className="relative w-full p-2 md:p-10">
+          <span id="donate" className="absolute -top-10"></span>
+          <div className="flex flex-col items-center justify-center container w-full gap-4 mt-10">
             <div className="flex flex-col items-start justify-start w-full">
               <h1 className="text-4xl sm:text-5xl font-bold">
                 Donate for Development of Temple
               </h1>
-              <h2 className="">
-                Below Mentioned are the officail bank details of the temple for
+              <h2 className="mt-2 text-lg">
+                Below are the official bank details of the temple for direct
                 donations and contributions towards the development of the
-                temple, events and activities.
+                temple, events, and activities.
               </h2>
-
-              <div className="flex flex-col items-start justify-start gap-0.5 text-start text-pretty mt-2 lg:mt-4 w-full">
-                <table>
-                  <tr>
-                    <th>Bank Name</th>
-                    <th>Account Number</th>
-                    <th>IFSC Code</th>
+            </div>
+            <div className="overflow-x-auto w-full scrollbar-thin scrollbar-thumb-rose-950 scrollbar-track-rose-900">
+              <table className="w-full text-sm lg:text-base">
+                <thead>
+                  <tr className="border-b border-rose-950">
+                    <th className="px-4 py-3 text-left">Type</th>
+                    <th className="px-4 py-3 text-left">Details</th>
                   </tr>
-                  <tr>
-                    <td>State Bank of India</td>
-                    <td>XXXXXXXXXXXXXX</td>
-                    <td>XXXXXXXX</td>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-rose-950">
+                    <td className="px-4 py-3 font-semibold">UPI Transfer</td>
+                    <td className="px-4 py-3">
+                      <p>
+                        <span className="font-semibold">UPI ID:</span> 98@cnrb
+                      </p>
+                    </td>
                   </tr>
-                  <tr>
-                    <td>State Bank of India</td>
-                    <td>XXXXXXXXXXXXXX</td>
-                    <td>XXXXXXXX</td>
+                  <tr className="border-b border-rose-950">
+                    <td className="px-4 py-3 font-semibold">Bank Transfer</td>
+                    <td className="px-4 py-3">
+                      <p>
+                        <span className="font-semibold">Bank Name:</span> [Bank
+                        Name Here]
+                      </p>
+                      <p>
+                        <span className="font-semibold">IFSC Code:</span> [IFSC
+                        Code Here]
+                      </p>
+                      <p>
+                        <span className="font-semibold">Account Number:</span>{" "}
+                        [Account Number Here]
+                      </p>
+                    </td>
                   </tr>
-                  <tr>
-                    <td>State Bank of India</td>
-                    <td>XXXXXXXXXXXXXX</td>
-                    <td>XXXXXXXX</td>
-                  </tr>
-                </table>
-              </div>
+                </tbody>
+              </table>
             </div>
           </div>
         </section>
       </div>
     </>
+  )
+}
+
+export const BentoGridItem = ({
+  className,
+  title,
+  description,
+  header,
+  date,
+  image,
+  icon,
+}: {
+  className?: string
+  title?: string | React.ReactNode
+  description?: string | React.ReactNode
+  header?: React.ReactNode
+  date: string
+  image: string
+  icon?: React.ReactNode
+}) => {
+  return (
+    <div
+      className={cn(
+        "group overflow-hidden relative row-span-1 rounded-xl group hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 bg-background border border-transparent justify-between flex flex-col space-y-4",
+        className
+      )}
+    >
+      <Image
+        src={image}
+        fill
+        alt="A beautiful waterfall"
+        className="rounded-xl absolute top-0 left-0 w-full object-cover object-center"
+      />
+      <p
+        className="absolute top-0 left-2 font-sans font-bold text-neutral-600 text-xs dark:text-neutral-300"
+        style={{ fontSize: "0.825rem" }}
+      >
+        {date}
+      </p>
+      {header}
+      <div className="group-hover:translate-x-2 translate-x-0 transition duration-200">
+        {icon}
+        <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
+          {title}
+        </div>
+        <div className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300">
+          {description}
+        </div>
+      </div>
+    </div>
   )
 }

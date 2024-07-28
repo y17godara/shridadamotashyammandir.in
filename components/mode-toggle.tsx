@@ -62,7 +62,7 @@ export function LangToggle({ className }: { className?: string }) {
         <Button
           variant="ghost"
           className={cn(
-            "h-8 w-32 px-0 hover:bg-primary-foreground focus:bg-primary",
+            "h-8 w-10 px-0 hover:bg-primary-foreground focus:bg-primary",
             className
           )}
         >

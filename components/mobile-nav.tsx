@@ -39,20 +39,20 @@ export function MobileNav() {
         </MobileLink>
         <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10">
           <div className="flex flex-col space-y-3">
-            <MobileLink href={'/'} onOpenChange={setOpen}>
+            <MobileLink href={"/"} onOpenChange={setOpen}>
               <span>Home</span>
             </MobileLink>
-            <MobileLink href={'#about'} onOpenChange={setOpen}>
+            <MobileLink href={"#timing"} onOpenChange={setOpen}>
+              <span>Timing</span>
+            </MobileLink>
+            <MobileLink href={"#about"} onOpenChange={setOpen}>
               <span>About</span>
             </MobileLink>
-            <MobileLink href={'#services'} onOpenChange={setOpen}>
+            <MobileLink href={"#events"} onOpenChange={setOpen}>
               <span>Event</span>
             </MobileLink>
-            <MobileLink href={'#donate'} onOpenChange={setOpen}>
+            <MobileLink href={"#donate"} onOpenChange={setOpen}>
               <span>Donate</span>
-            </MobileLink>
-            <MobileLink href={'#contact'} onOpenChange={setOpen}>
-              <span>Contact</span>
             </MobileLink>
           </div>
         </ScrollArea>

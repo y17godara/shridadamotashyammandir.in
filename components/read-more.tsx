@@ -7,17 +7,19 @@ import { cn } from "@/lib/utils"
 export default function Readmore({
   children,
   className,
-  content,
   props,
 }: {
   children: React.ReactNode
   className?: string
-  content?: string
   props?: any
 }) {
   return (
     <Drawer.Root shouldScaleBackground>
-      <Drawer.Trigger asChild>{children}</Drawer.Trigger>
+      <Drawer.Trigger asChild>
+        <button className="text-sm lg:text-base font-semibold text-foreground bg-background p-2 rounded-lg">
+          Read More
+        </button>
+      </Drawer.Trigger>
       <Drawer.Portal>
         <Drawer.Overlay className="fixed inset-0 bg-black/40" />
         <Drawer.Content
@@ -27,7 +29,7 @@ export default function Readmore({
           )}
           {...props}
         >
-          <section className="container px-2 py-5 ">{content}</section>
+          {children}
         </Drawer.Content>
       </Drawer.Portal>
     </Drawer.Root>
