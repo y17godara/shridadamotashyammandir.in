@@ -58,10 +58,10 @@ const CustomButton = ({ children }: { children: React.ReactNode }) => {
   return (
     <Button
       variant={"supercell"}
-      className="items-center justify-center p-2 rounded-lg text-sm lg:text-base font-semibold text-foreground bg-gradient-to-b from-background to-rose-500"
+      className="items-center justify-center p-2 z-0 rounded-lg text-sm lg:text-base font-semibold text-foreground bg-gradient-to-b from-background to-rose-500"
     >
       <span className="absolute left-0 right-0 bottom-1/2 h-1/2 w-full z-0 bg-gradient-to-b from-transparent to-rose-500 px-0.5 rounded-b-lg transform translate-y-full shadow-sm"></span>
-      <span className="relative z-10">{children}</span>
+      <span className="relative z-20">{children}</span>
     </Button>
   )
 }

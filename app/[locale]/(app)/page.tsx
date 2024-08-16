@@ -1,6 +1,8 @@
 import { Suspense } from "react"
 import Image from "next/image"
+import Link from "next/link"
 import Events, { EventType } from "@/data/events"
+import { HeroImages } from "@/data/images"
 import { Locale } from "@/i18n.config"
 import { BentoGrid } from "@/ui/bento-grid"
 import { PiBellDuotone } from "react-icons/pi"
@@ -92,9 +94,11 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
                   peaceful environment. The temple is also known for its
                   beautiful architecture and design.
                 </p>
-                <Readmore>
+                <Readmore
+                  heading={"Shri Data Mote Shri Shyam Ji Mandir History"}
+                >
                   <section className="relative container px-2.5 sm:px-10 py-10 overflow-y-scroll scrollbar-thin scrollbar-thumb-rose-950 scrollbar-track-rose-900">
-                    <h2 className="relative text-2xl sm:text-3xl font-bold my-4 leading-tight">
+                    {/* <h2 className="relative text-2xl sm:text-3xl font-bold my-4 leading-tight">
                       Shri Data Mote Shri Shyam Ji Mandir
                       <h1
                         className={
@@ -103,9 +107,9 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
                       >
                         History
                       </h1>
-                    </h2>
+                    </h2> */}
 
-                    <div className="text-pretty">
+                    <div className="text-pretty text-center text-sm md:text-base">
                       <p>
                         🙏🙏🙏Jay Dada Mota 🙏🙏Jay Shri Shyam... Ham aapko Dada
                         Mota Shri Shyam Mandir Itihaas ke bare mein Jankari
@@ -348,7 +352,34 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
                 temple
               </h2>
             </div>
-            <div className="overflow-x-auto w-full scrollbar-thin scrollbar-thumb-rose-950 scrollbar-track-rose-900"></div>
+            <div className="overflow-x-auto w-full scrollbar-thin scrollbar-thumb-rose-950 scrollbar-track-rose-900">
+              <div className="columns-1 gap-4 sm:columns-2 xl:columns-3 2xl:columns-4">
+                {HeroImages.map((image, index: number) => (
+                  <Link
+                    key={index + image.alt}
+                    href={`/?photoId=${image.id}`}
+                    as={`/p/${image.id}`}
+                    shallow
+                    className="after:content group relative mb-5 block w-full cursor-zoom-in after:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:shadow-highlight"
+                  >
+                    <Image
+                      alt="Next.js Conf photo"
+                      className="transform rounded-lg brightness-90 transition will-change-auto group-hover:brightness-110"
+                      style={{ transform: "translate3d(0, 0, 0)" }}
+                      placeholder="blur"
+                      blurDataURL={image.src}
+                      src={image.src}
+                      width={720}
+                      height={480}
+                      sizes="(max-width: 640px) 100vw,
+                 (max-width: 1280px) 50vw,
+                 (max-width: 1536px) 33vw,
+                 25vw"
+                    />
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
       </div>
