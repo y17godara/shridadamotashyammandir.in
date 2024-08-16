@@ -1,6 +1,8 @@
-// import BGImage10 from "../public/images/vps/bg1.png"
+// @ts-ignore
+// @ts-ignore
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+
 import BGImage5 from "../public/images/vps/bg2.png"
-// import BGImage11 from "../public/images/vps/bg3.png"
 import BGImage2 from "../public/images/vps/bg4.jpg"
 import BGImage6 from "../public/images/vps/bg6.jpg"
 import BGImage7 from "../public/images/vps/bg7.jpg"
@@ -10,9 +12,6 @@ import BGImage3 from "../public/images/vps/bg10.jpg"
 import BGImage4 from "../public/images/vps/bg11.jpg"
 import BGImage12 from "../public/images/vps/bg12.jpg"
 import BGImage13 from "../public/images/vps/bg13.jpg"
-
-// import BGImage5 from "../public/images/vps/bg5.jpg"
-// import BGImage14 from "../public/images/vps/bg14.jpg"
 
 export const HeroImages = [
   {
