@@ -3,7 +3,7 @@
 // @ts-nocheck
 
 import BGImage5 from "../public/images/vps/bg2.png"
-import BGImage2 from "../public/images/vps/bg4.jpg"
+import BGImage2 from "../public/images/vps/bg4.JPG"
 // @ts-ignore
 import BGImage6 from "../public/images/vps/bg6.JPG"
 // @ts-ignore
