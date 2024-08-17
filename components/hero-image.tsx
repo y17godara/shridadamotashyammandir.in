@@ -35,12 +35,12 @@ export default function EmblaCarousel() {
                 alt={image.alt}
                 loading="eager"
               />
-              <p
+              {/* <p
                 className="absolute left-2 bottom-2 bg-black bg-opacity-50 text-white p-2 text-xs lg:text-sm rounded-tr-xl"
                 style={{ zIndex: 10 }}
               >
                 {image.id} - {image.alt}
-              </p>
+              </p> */}
             </div>
           ))}
         </div>

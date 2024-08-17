@@ -1,6 +1,4 @@
-// @ts-ignore
-// @ts-ignore
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+/* eslint-disable */
 
 import BGImage5 from "../public/images/vps/bg2.png"
 import BGImage2 from "../public/images/vps/bg4.jpg"
