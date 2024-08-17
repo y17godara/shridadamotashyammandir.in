@@ -2,8 +2,8 @@ import { type Metadata, type Viewport } from "next"
 
 const DEFAULT_DATA = {
   DOMAIN: [
-    "https://shridatamotashyamjimandir.in",
-    "https://shridatamotashyamjimandir.com",
+    "https://www.shridadamotashyammandir.in",
+    "https://shridadamotashyammandir.in",
   ] as const,
   DEVELOPERS: [
     {
@@ -27,7 +27,7 @@ const DEFAULT_DATA = {
       },
     },
   ],
-  ogImage: `https://shridatamotashyamjimandir.in/og-image.jpg`,
+  ogImage: `https://shridadamotashyammandir.in/og-image.jpg`,
   name: "Shri Dada Mota Shri Shyam Ji Mandir Bharthal New Delhi India",
   Description: `Shri Data Mote Shyam Ji Mandir is a Hindu Temple located in Bharthal Village, Dwarka Sector 26 New Delhi India. The Temple is One of the 
     biggest and Popular Temple in the area dedicated to Lord Krishna. The Temple is also known as Shri Shyam Ji Dada Mote Mandir. It has been built in the
