@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useCallback } from "react"
-import { HeroImages } from "@/data/images"
+import HeroImages from "@/data/images"
 import Autoplay from "embla-carousel-autoplay"
 import useEmblaCarousel from "embla-carousel-react"
 import { ChevronLeft, ChevronRight } from "lucide-react"

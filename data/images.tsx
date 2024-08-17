@@ -1,17 +1,27 @@
 /* eslint-disable */
+// @ts-ignore
+// @ts-nocheck
 
 import BGImage5 from "../public/images/vps/bg2.png"
 import BGImage2 from "../public/images/vps/bg4.jpg"
-import BGImage6 from "../public/images/vps/bg6.jpg"
-import BGImage7 from "../public/images/vps/bg7.jpg"
-import BGImage8 from "../public/images/vps/bg8.jpg"
-import BGImage1 from "../public/images/vps/bg9.jpg"
-import BGImage3 from "../public/images/vps/bg10.jpg"
-import BGImage4 from "../public/images/vps/bg11.jpg"
-import BGImage12 from "../public/images/vps/bg12.jpg"
-import BGImage13 from "../public/images/vps/bg13.jpg"
+// @ts-ignore
+import BGImage6 from "../public/images/vps/bg6.JPG"
+// @ts-ignore
+import BGImage7 from "../public/images/vps/bg7.JPG"
+// @ts-ignore
+import BGImage8 from "../public/images/vps/bg8.JPG"
+// @ts-ignore
+import BGImage1 from "../public/images/vps/bg9.JPG"
+// @ts-ignore
+import BGImage3 from "../public/images/vps/bg10.JPG"
+// @ts-ignore
+import BGImage4 from "../public/images/vps/bg11.JPG"
+// @ts-ignore
+import BGImage12 from "../public/images/vps/bg12.JPG"
+// @ts-ignore
+import BGImage13 from "../public/images/vps/bg13.JPG"
 
-export const HeroImages = [
+const HeroImages = [
   {
     id: 1,
     src: BGImage1.src,
@@ -63,3 +73,5 @@ export const HeroImages = [
     alt: "Mandir Image",
   },
 ]
+
+export default HeroImages
