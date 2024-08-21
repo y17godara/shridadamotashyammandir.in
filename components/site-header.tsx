@@ -15,9 +15,7 @@ export function SiteHeader() {
       <MobileNav />
       <div className="flex md:hidden items-center justify-between space-x-2 md:justify-end">
         <Link href="/" className="mx-4 flex items-center lg:mx-6">
-          <div>
-            <Icons.logo className="h-6 w-6" />
-          </div>
+          <Icons.logo className="h-6 w-6" />
         </Link>
       </div>
       <div

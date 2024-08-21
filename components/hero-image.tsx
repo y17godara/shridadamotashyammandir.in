@@ -18,7 +18,7 @@ export default function EmblaCarousel() {
   }, [emblaApi])
 
   return (
-    <div className="relative !w-screen !max-w-full p-2 md:p-10 !h-[40vh] md:!h-[75vh] lg:!h-[95vh] lg:!pt-2 !mt-0 embla">
+    <div className="relative !w-screen !max-w-[1280px] p-2 md:p-10 !h-[40vh] md:!h-[75vh] lg:!h-[55vh] xl:!h-[68vh] lg:!pt-2 !mt-0 embla">
       <div
         className="!border-none h-full flex flex-col relative embla__viewport rounded-xl overflow-hidden !w-full !max-w-full"
         ref={emblaRef}
