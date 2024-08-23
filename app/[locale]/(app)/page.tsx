@@ -228,11 +228,10 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
           -center container w-full gap-4"
           >
             <div className="flex flex-col items-start justify-start w-full">
-              <h1 className="text-4xl sm:text-5xl font-bold">
-                Upcoming Event Details
-              </h1>
+              <h1 className="text-4xl sm:text-5xl font-bold">Event Details</h1>
               <h2 className="">
-                Join us for our upcoming events and celebrations
+                Join us for our upcoming or yearly events and celebrations at
+                the temple.
               </h2>
             </div>
 
