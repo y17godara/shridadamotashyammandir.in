@@ -9,6 +9,7 @@ import { PiBellDuotone } from "react-icons/pi"
 
 import { getDictionary } from "@/lib/dictionary"
 import { cn } from "@/lib/utils"
+import GallaryGrid from "@/components/gallary-grid"
 import ImageSlider from "@/components/hero-image"
 import Readmore from "@/components/read-more"
 
@@ -321,32 +322,7 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
               </h2>
             </div>
             <div className="overflow-x-auto w-full scrollbar-thin scrollbar-thumb-rose-950 scrollbar-track-rose-900">
-              <div className="columns-1 gap-4 sm:columns-2 xl:columns-3 2xl:columns-4">
-                {HeroImages.map((image, index: number) => (
-                  <Link
-                    key={index + image.alt}
-                    href={`/?photoId=${image.id}`}
-                    as={`/p/${image.id}`}
-                    shallow
-                    className="after:content group relative mb-5 block w-full cursor-zoom-in after:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:shadow-highlight"
-                  >
-                    <Image
-                      alt="Next.js Conf photo"
-                      className="transform rounded-lg brightness-90 transition will-change-auto group-hover:brightness-110"
-                      style={{ transform: "translate3d(0, 0, 0)" }}
-                      placeholder="blur"
-                      blurDataURL={image.src}
-                      src={image.src}
-                      width={720}
-                      height={480}
-                      sizes="(max-width: 640px) 100vw,
-                 (max-width: 1280px) 50vw,
-                 (max-width: 1536px) 33vw,
-                 25vw"
-                    />
-                  </Link>
-                ))}
-              </div>
+              <GallaryGrid />
             </div>
           </div>
         </section>
