@@ -377,7 +377,7 @@ const BentoGridItem = ({
       />
       {/* <div className="absolute backdrop-blur-[1px] left-0 top-0 bottom-0 w-1/2 group-hover:backdrop-blur-none" /> */}
       <p
-        className="absolute top-0 left-2 font-sans font-bold text-neutral-600 text-xs dark:text-neutral-300"
+        className="absolute top-0 after:backdrop-blur-sm left-2 font-sans font-bold text-neutral-600 text-xs dark:text-neutral-300"
         style={{ fontSize: "0.825rem" }}
       >
         {date}

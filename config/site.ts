@@ -16,24 +16,10 @@ const DEFAULT_DATA = {
         github: "https://github.com/y17godara",
       },
     },
-    {
-      name: "Mayank Godara",
-      username: "godara20",
-      email: "mayankgodara111@gmail.com",
-      url: "https://github.com/godara20",
-      links: {
-        twitter: "",
-        github: "https://github.com/godara20",
-      },
-    },
   ],
   ogImage: `https://shridadamotashyammandir.in/og-image.jpg`,
-  name: "Shri Dada Mota Shri Shyam Ji Mandir Bharthal New Delhi India",
-  Description: `Shri Data Mote Shyam Ji Mandir is a Hindu Temple located in Bharthal Village, Dwarka Sector 26 New Delhi India. The Temple is One of the 
-    biggest and Popular Temple in the area dedicated to Lord Krishna. The Temple is also known as Shri Shyam Ji Dada Mote Mandir. It has been built in the
-    memory of Shri Data Mote Ji. The Temple is a popular place of worship for the devotees of Lord Krishna. The Temple is visited by thousands of devotees
-    per year. The Temple is a beautiful place to visit and offers a peaceful and serene environment to the devotees. The Temple is a must-visit place for
-    those who are looking for spiritual peace and solace.`,
+  name: "Shri Dada Mota Shyam Mandir Bharthal - New Delhi India",
+  Description: `Shri Dada Mota Shyam Ji Mandir is a Hindu temple located in Bharthal Village, Dwarka Sector 26, New Delhi, India. Also known as Shri Shyam Ji Dada Mota Mandir, this temple is believed by devotees to be over 350 years old. It is dedicated to Lord Shri Shyam Ji and Shri Dada Mota Ji and is renowned for its spiritual and religious activities.`,
 }
 
 const SiteViewport: Viewport = {

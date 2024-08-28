@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export function SiteFooter() {
   return (
     <footer className="md:px-4 md:py-2 w-full !py-10 flex flex-col justify-center items-center text-center">
@@ -17,6 +19,15 @@ export function SiteFooter() {
           endorsement of the artist shall be implied. Unauthorized use is
           prohibited and punishable by law.
         </p>
+      </div>
+      <div className="">
+        <Link
+          href="https://github.com/y17godara/shridadamotashyammandir.in"
+          target="_blank"
+          className="text-secondary-foreground/40 text-sm text-center block py-2 hover:underline underline-offset-2"
+        >
+          Wanna contribute to this project? Github
+        </Link>
       </div>
     </footer>
   )
