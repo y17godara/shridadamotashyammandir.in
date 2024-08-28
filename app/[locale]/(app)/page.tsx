@@ -78,76 +78,94 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
                       </h1>
                     </h2> */}
 
-                    <div className="text-pretty text-center text-sm md:text-base">
+                    <div className="flex flex-col text-pretty text-cente gap-4 text-sm md:text-base">
                       <p>
-                        🙏🙏🙏Jay Dada Mota 🙏🙏Jay Shri Shyam... Ham aapko Dada
-                        Mota Shri Shyam Mandir Itihaas ke bare mein Jankari
-                        Denge... Jo Hamen Gaon wale Bade bujurgon Apne
-                        sahyogiyon dwara Hamen Mili Hai... Jankari is Prakar hai
-                        baat bahut purane Samay Ki Hai.... bharthal Gaon bahut
-                        hi khushhal AVN sampann Gaon tha .... mukhya vyavsay
-                        kheti hone ke Karan Charon Taraf Hariyali hi Hariyali
-                        thi ...Gaon Ke Log aapas mein bahut miljul kar Rahte the
-                        aur Dukh Sukh Mein Ek dusre ka Sahyog Karte The gaon
-                        gaon ki tarah Nahin Parivar Ki Tarah rahata tha. ...
-                        Samay ki vidambna Ke Karan Gaon Mein Sukha Pada sukhe Ke
-                        Karan Jameen sukhne Lag Gai mahvari fail Gai .... Jiske
-                        Karan Gaon Walon Jeev jantuon ko bahut sari taklifo ka
-                        samna karna Pada... ine sab se chhutkara pane ke liye
-                        Gaon Walon Ne Havan Pujan Shuru Kiya. .... Havan Puja
-                        paath se Kuchh fayda na hone ke Karan Gaon wale Pareshan
-                        Rahane Lage Aur Gaon chhodkar Jaane per majbur ho rahe
-                        the. ... UN Dinon Gaon Mein Ek Yuva Sadhu ka aagman hua.
-                        ... vah sadhu baba gaon ke andar Bani Chaupal Mein
-                        rahata Tha. ... sadhu baba ne Kuchh Samay bad apne
-                        Swayam ke tap ke liye gaon ke bahar jakar Ek jhopadi
-                        Banai... aur vahan Ekant mein rahe kar tab karne Lag
-                        Gaye... Gaon wale unke tapasvi Jivan Ko Dekhkar unke
-                        pass jakar baithane Lag Gaye aur thoda bahut Kuchh khane
-                        ko le Jaane Lag Gaye. .. Samay Bita Gaya Baba Gaon walon
-                        ki samasyaon ka Samadhan karne laagye..... Bujurg AVN
-                        healthy hone ke Karan Gaon Walon Ne unko Dada Mota Naam
-                        Diya. ...
+                        Gaanv ke bujurgon aur sahayogiyon dvaara dee gaee
+                        jaanakaaree ke anusaar daada mota shree shyaam mandir ka
+                        itihaas kaaphee samrddh hai. ve kahate hain ki
                       </p>
                       <p>
-                        Ek Bar Ki Baat Hai Dada Mota apni Tapasya Mein leen the
-                        aur Virodhi tatvon Ne Unki jhopadi Mein Aag Lagadi.....
-                        jhopadi Puri Jal Gai per Baba ko thodi si bhi Aanch
-                        Nahin lagi..... is Prakar unhone Anek Chamatkar
-                        dikhlaayen. ... UN Dinon Baba Khatu Shyam ji ka Bhavya
-                        Mela aur kushtia hoti thi. ... Dada Mota ji ke Sahyog
-                        aur Gaon Walon ke dwara Khatu Shyam Mela Jita gaya tha
-                        .....barthal Gaon Mein Shyam Baba ki Murti Dada Ke
-                        Sahyog se sthapit Ki Gai thi. .. Ek Bar Ki Baat Hai Gaon
-                        Mein pashuon ke dudh ki jagah Khoon Ki Dhaar nikalne
-                        Lagi.... Gaon WaleHai Dekh Kar bahut Pareshan ho gaye
-                        aur Dada ke pass Aaye... Dada ke Samay Ek Jod ka Nirman
-                        karaya gaya tha Jiska Naam Malah Jod tha ...... Dada ne
-                        bataya yahan se Pani Le jakar pashuon per chhidak do sab
-                        theek ho jaega. ... Aur Aisa Hi Hua Sab Pashu theek ho
-                        gaye. ... Sabhi Gaon wale Khush hokar Dada ke pass bahut
-                        dudh Lekar Aaye. .. Dada Ne UN sabka man rakhte Hue
-                        thoda dudh apne pass Rakh liya aur Baki unko De Diya Aur
-                        Kahan jakar Ke khir bnao Khatu Shyam baba Ko Bhog lagao
-                        bacchon ko khilao aur aap bhi Khao... aur Aise Samay
-                        Bitta Gaya Dada Samadhi lagakar Baithe baithe smadisht
-                        ho gaye ... aur Jahan per Dada samadhisht Hue The vahin
-                        per Aaj Baba ki Samadhi hai. .. aur Aaj Bhi Gaon Wale
-                        Baba ko pura Man Se Puja paath Karte Hain aur Unki
-                        manokamna purn hoti hai. ..Tab Se Hi Gaon Mein Bhavya
-                        Mele ka aayojan hota hai yah Mela faagun Mass ki
-                        Ekadashi Aur dvadashi Ko hota hai aur Yahan per
-                        kushtiyon ka bhi aayojan kiya jata hai. .... aur
-                        Ekadashi Wale Din gaon ki mahilayen Vrat aur Puja Karti
-                        Hain aur yah Parampara Usi Samay se Chali a rahi hai aur
-                        Aaj Bhi Ho Rahi Hai. .... Aaj Bhi dvadashi Wale Din khir
-                        Ka Prasad Banaya aur Khilaya jata hai. .. aur itwar Wale
-                        Din Dada Mota Mandi per gud ka Prasad chadhaya Jata aur
-                        khaya jata hai. .. aur Aaj Bhi anekon tyohar Badi
-                        dhumdham se Manaya Jaate Hain ....Gaon wale aur Gaon se
-                        bahar se aane wale logon ke Prati is Mandir ko Lekar
-                        bahut hi Shradha hai... aur Yahan per Aane walon ki
-                        manokamnaen puri hoti hain
+                        Baat bahut purane samay ki hai. Bharthal gaon bahut hi
+                        khushhal aur sampann gaon tha. Mukhya vyavsay kheti hone
+                        ke karan, charon taraf hariyali hi hariyali thi. Gaon ke
+                        log aapas mein bahut miljul kar rahte the aur dukh sukh
+                        mein ek dusre ka sahyog karte the. Gaon gaon ki tarah
+                        nahin, parivar ki tarah rahata tha.
+                      </p>
+                      <p>
+                        Samay ki vidambna ke karan, gaon mein sukha pada. Sukhe
+                        ke karan zameen sukhne lag gai aur mahaamari fail gai,
+                        jiske karan gaon walon aur jeev jantuon ko bahut sari
+                        taklifo ka samna karna pada. In sab se chhutkara pane ke
+                        liye gaon walon ne havan-pujan shuru kiya. Havan puja se
+                        kuchh fayda na hone ke karan gaon wale pareshan rahane
+                        lage aur gaon chhodkar jaane per majbur ho rahe the.
+                      </p>
+                      <p>
+                        Un dino gaon mein ek yuva sadhu ka aagman hua. Vah sadhu
+                        baba gaon ke andar bani chaupal mein rahata tha. Sadhu
+                        baba ne kuchh samay baad apne swayam ke tap ke liye gaon
+                        ke bahar jakar ek jhopadi banai aur wahan ekant mein reh
+                        kar tap karne lag gaye. Gaon wale unke tapasvi jivan ko
+                        dekhkar unke paas jakar baithne lage aur thoda bahut
+                        kuchh khane ko le jane lage. Samay bita gaya aur baba
+                        gaon walon ki samasyaon ka samadhan karne lage. Bujurg
+                        aur swasth hone ke karan gaon walon ne unko "Dada Mota"
+                        naam diya.
+                      </p>
+                      <p>
+                        Ek baar ki baat hai, Dada Mota apni tapasya mein leen
+                        the aur virodhi tatvon ne unki jhopadi mein aag laga di.
+                        Jhopadi puri jal gai, par baba ko thodi si bhi aanch
+                        nahin lagi. Is prakar unhone anek chamatkar dikhlaaye.
+                      </p>
+                      <p>
+                        Un dino baba Khatu Shyam ji ka bhavya mela aur kushti
+                        hoti thi. Dada Mota ji ke sahyog aur gaon walon ke dwara
+                        Khatu Shyam mela jeeta gaya tha. Bharthal gaon mein
+                        Shyam Baba ki murti Dada ke sahyog se sthapit ki gai
+                        thi.
+                      </p>
+                      <p>
+                        Ek baar gaon mein pashuon ke doodh ki jagah khoon ki
+                        dhaar nikalne lagi. Gaon wale yeh dekh kar bahut
+                        pareshan ho gaye aur Dada ke paas aaye. Dada ke samay ek
+                        jod ka nirmaan karaya gaya tha, jiska naam "Malah Jod"
+                        tha. Dada ne bataya ki yahan se paani le jakar pashuon
+                        par chhidak do, sab theek ho jaayega. Aur aisa hi hua,
+                        sab pashu theek ho gaye.
+                      </p>
+                      <p>
+                        Sabhi gaon wale khush hokar Dada ke paas bahut doodh
+                        lekar aaye. Dada ne un sabka man rakhte hue thoda doodh
+                        apne paas rakh liya aur baaki unko de diya. Dada ne
+                        kaha, "Jao khir banao, Khatu Shyam Baba ko bhog lagao,
+                        bachchon ko khilao aur aap bhi khao."
+                      </p>
+                      <p>
+                        Samay bitta gaya, Dada samadhi lagakar baithe baithe
+                        smadisht ho gaye, aur jahan per Dada samadhisht hue the,
+                        vahin per aaj Dada ki samadhi hai. Aaj bhi gaon wale
+                        Dada ko pura man se puja paath karte hain aur unki
+                        manokamna purn hoti hai. Tab se hi gaon mein bhavya mele
+                        ka aayojan hota hai. Yah mela faagun maas ki Ekadashi
+                        aur Dvadashi ko hota hai aur yahan per kushtiyon ka bhi
+                        aayojan kiya jata hai.
+                      </p>
+                      <p>
+                        Ekadashi wale din gaon ki mahilayen vrat aur puja karti
+                        hain aur yah parampara usi samay se chali aa rahi hai
+                        aur aaj bhi ho rahi hai. Aaj bhi Dvadashi wale din khir
+                        ka prasad banaya aur khilaya jata hai. Itwar wale din
+                        Dada Mota mandir per gud ka prasad chadhaya jata aur
+                        khaya jata hai.
+                      </p>
+                      <p>
+                        Aaj bhi anekon tyohar badi dhumdham se manaya jaate
+                        hain. Gaon wale aur gaon se bahar se aane wale logon ke
+                        mann mai mandir ke prati bhott shradha hai, aur yaahapar
+                        akar sache mann se kuch mangoo to apki manokamna jarur
+                        puri hoti hai.
                       </p>
                     </div>
                   </section>
@@ -240,12 +258,11 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
                 <BentoGridItem
                   key={i + item.title}
                   title={item.title}
-                  description={item.description}
                   header={item.header}
                   icon={item.icon}
                   date={item.date}
                   image={item.image}
-                  className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+                  className={i === 3 || i === 6 ? "md:col-span-1" : ""}
                 />
               ))}
             </BentoGrid>
@@ -333,7 +350,6 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
 const BentoGridItem = ({
   className,
   title,
-  description,
   header,
   date,
   image,
@@ -341,7 +357,6 @@ const BentoGridItem = ({
 }: {
   className?: string
   title?: string | React.ReactNode
-  description?: string | React.ReactNode
   header?: React.ReactNode
   date: string
   image: string
@@ -360,6 +375,7 @@ const BentoGridItem = ({
         alt="A beautiful waterfall"
         className="rounded-xl absolute top-0 left-0 w-full object-cover object-center"
       />
+      {/* <div className="absolute backdrop-blur-[1px] left-0 top-0 bottom-0 w-1/2 group-hover:backdrop-blur-none" /> */}
       <p
         className="absolute top-0 left-2 font-sans font-bold text-neutral-600 text-xs dark:text-neutral-300"
         style={{ fontSize: "0.825rem" }}
@@ -371,9 +387,6 @@ const BentoGridItem = ({
         {icon}
         <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
           {title}
-        </div>
-        <div className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300">
-          {description}
         </div>
       </div>
     </div>

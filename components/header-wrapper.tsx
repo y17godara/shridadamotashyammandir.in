@@ -15,10 +15,10 @@ export function SiteHeaderWrapper({ children }: { children: React.ReactNode }) {
   const { scrollY } = useScroll()
   return (
     <AnimatePresence>
-      <motion.header className="sticky top-0 z-50 w-full backdrop-blur-3xl border-border/40 bg-background/95 supports-[backdrop-filter]:bg-background/60">
+      <motion.header className="sticky top-2 z-50 w-full mx-auto">
         <motion.div
           className={cn(
-            "container px-4 flex h-16 py-1 justify-between md:justify-center items-center mx-auto"
+            "container px-4 flex h-16 py-1 max-w-[1200px] rounded-full justify-between md:justify-center items-center mx-auto backdrop-blur-xl border-border/40 bg-background/95 supports-[backdrop-filter]:bg-background/60"
           )}
         >
           {children}
