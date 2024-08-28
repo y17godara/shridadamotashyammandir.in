@@ -25,19 +25,19 @@ export function MobileNav() {
           <span className="sr-only">Toggle Menu</span>
         </Button>
       </SheetTrigger>
-      <SheetContent side="left" className="pr-0">
+      <SheetContent side="bottom" className="pr-0">
         <MobileLink
           href="/"
           className="flex items-center text-start gap-4"
           onOpenChange={setOpen}
         >
-          <Icons.logo className="h-4 w-4 min-h-4 min-w-4" />
+          {/* <Icons.logo className="h-4 w-4 min-h-4 min-w-4" /> */}
           <span className="font-bold hidden sm:block">
             Dada Mote Shri Shyam Ji Mandir
           </span>
           <span className="font-bold text-lg sm:hidden">Welcome</span>
         </MobileLink>
-        <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10">
+        <ScrollArea className="my-4 pb-10">
           <div className="flex flex-col space-y-3">
             <MobileLink href={"/"} onOpenChange={setOpen}>
               <span>Home</span>

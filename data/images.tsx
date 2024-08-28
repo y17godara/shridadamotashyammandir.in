@@ -21,10 +21,16 @@ import BGImage12 from "../public/images/vps/bg12.JPG"
 // @ts-ignore
 import BGImage13 from "../public/images/vps/bg13.JPG"
 
-const HeroImages = [
+export interface ImageAttributes {
+  id: number
+  src: string
+  alt: string
+}
+
+const HeroImages: ImageAttributes[] = [
   {
     id: 1,
-    src: BGImage1.src,
+    src: "https://images.unsplash.com/photo-1701748131168-05f3a37422ae?q=80&w=2976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "Mandir Front View",
   },
   {

@@ -7,7 +7,7 @@ export function SiteFooter() {
         </div>
         </div> */}
       <div className="flex flex-col items-center w-full justify-center text-center max-w-[1200px]">
-        <p className="text-sm text-secondary-foreground">
+        <p className="text-sm text-secondary-foreground/80">
           © {new Date().getFullYear()} Rights Reserved
         </p>
         <p className="text-xs text-secondary-foreground/50 mt-2">

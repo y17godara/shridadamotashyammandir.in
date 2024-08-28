@@ -384,9 +384,8 @@ const BentoGridItem = ({
       </p>
       {header}
       <div className="group-hover:translate-x-2 translate-x-0 transition duration-200">
-        {icon}
-        <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
-          {title}
+        <div className="flex flex-row gap-1 items-center font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
+          {icon} {title}
         </div>
       </div>
     </div>
