@@ -1,5 +1,6 @@
 import { PiBellDuotone, PiBellRingingDuotone } from "react-icons/pi"
 
+import ekadashi from "../public/images/carousel/7.webp"
 // @ts-ignore
 import Mela from "../public/images/vps/bg6.JPG"
 import src from "../public/images/y17/bg1.jpeg"
@@ -43,10 +44,8 @@ const Events: EventType[] = [
   },
   {
     title: "Nirjala Ekadashi 2025",
-
     date: "June 6, 2025",
-    image:
-      "https://images.unsplash.com/photo-1716117626586-538233aaf9ae?q=80&w=3355&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: ekadashi.src,
     header: <Skeleton />,
     icon: <PiBellDuotone className="h-4 w-4 text-neutral-500" />,
   },
