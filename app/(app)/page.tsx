@@ -67,17 +67,6 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
                   heading={"Shri Data Mote Shri Shyam Ji Mandir History"}
                 >
                   <section className="relative container px-2.5 sm:px-10 py-10 overflow-y-scroll scrollbar-thin scrollbar-thumb-rose-950 scrollbar-track-rose-900">
-                    {/* <h2 className="relative text-2xl sm:text-3xl font-bold my-4 leading-tight">
-                      Shri Data Mote Shri Shyam Ji Mandir
-                      <h1
-                        className={
-                          "absolute -top-7 -left-1 text-xs px-1.5 py-0.5 sm:text-sm font-bold underline underline-offset-2 border-2 rounded-xl bg-rose-950 border-rose-950"
-                        }
-                      >
-                        History
-                      </h1>
-                    </h2> */}
-
                     <div className="flex flex-col text-pretty text-cente gap-4 text-sm md:text-base">
                       <p>
                         Gaanv ke bujurgon aur sahayogiyon dvaara dee gaee
@@ -182,9 +171,9 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
           -center container w-full gap-4"
           >
             <div className="flex flex-col items-start justify-start w-full">
-              <h1 className="text-4xl sm:text-5xl font-bold">
+              <h2 className="text-4xl sm:text-5xl font-bold">
                 Mandir Darshan Timings
-              </h1>
+              </h2>
               <h2 className="">
                 Below mentioned are the darshan timings and aarti timings of the
                 temple this could be subject to change during special or festive
@@ -246,7 +235,7 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
           -center container w-full gap-4"
           >
             <div className="flex flex-col items-start justify-start w-full">
-              <h1 className="text-4xl sm:text-5xl font-bold">Event Details</h1>
+              <h2 className="text-4xl sm:text-5xl font-bold">Event Details</h2>
               <h2 className="">
                 Join us for our upcoming or yearly events and celebrations at
                 the temple.
@@ -273,9 +262,9 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
           <span id="donate" className="absolute -top-10"></span>
           <div className="flex flex-col items-center justify-center container w-full gap-4 mt-10">
             <div className="flex flex-col items-start justify-start w-full">
-              <h1 className="text-4xl sm:text-5xl font-bold">
+              <h2 className="text-4xl sm:text-5xl font-bold">
                 Donate for Development of Temple
-              </h1>
+              </h2>
               <h2 className="mt-2 text-lg">
                 Below are the official bank details of the temple for direct
                 donations and contributions towards the development of the
@@ -331,7 +320,7 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
           <span id="gallery" className="absolute -top-10"></span>
           <div className="flex flex-col items-center justify-center container w-full gap-4 mt-10">
             <div className="flex flex-col items-start justify-start w-full">
-              <h1 className="text-4xl sm:text-5xl font-bold">Gallery</h1>
+              <h2 className="text-4xl sm:text-5xl font-bold">Gallery</h2>
               <h2 className="mt-2 text-lg">
                 Some of the beautiful memories and moments captured at the
                 temple
@@ -372,6 +361,8 @@ const BentoGridItem = ({
       <Image
         src={image}
         fill
+        loading="lazy"
+        quality={20}
         alt="A beautiful waterfall"
         className="rounded-xl absolute top-0 left-0 w-full object-cover object-center"
       />

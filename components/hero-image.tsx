@@ -47,9 +47,8 @@ export default function App() {
             src={BGImage1.src}
             alt={"Mandir Front View"}
             fill
-            placeholder="blur"
-            blurDataURL="/assets/img/placeholder.jpg"
-            quality={30}
+            loading="lazy"
+            quality={20}
             className="object-cover w-full h-full group-hover:scale-110 transition-all duration-300 ease-in-out"
           />
         </SwiperSlide>
@@ -58,9 +57,8 @@ export default function App() {
             src={BGImage2.src}
             alt={"Mandir Front View"}
             fill
-            placeholder="blur"
-            blurDataURL="/assets/img/placeholder.jpg"
-            quality={30}
+            loading="lazy"
+            quality={20}
             className="object-cover w-full h-full group-hover:scale-110 transition-all duration-300 ease-in-out"
           />
         </SwiperSlide>
@@ -69,9 +67,8 @@ export default function App() {
             src={BGImage3.src}
             alt={"Mandir Front View"}
             fill
-            placeholder="blur"
-            blurDataURL="/assets/img/placeholder.jpg"
-            quality={30}
+            loading="lazy"
+            quality={20}
             className="object-cover w-full h-full group-hover:scale-110 transition-all duration-300 ease-in-out"
           />
         </SwiperSlide>
@@ -80,9 +77,8 @@ export default function App() {
             src={BGImage4.src}
             alt={"Mandir Front View"}
             fill
-            placeholder="blur"
-            blurDataURL="/assets/img/placeholder.jpg"
-            quality={30}
+            loading="lazy"
+            quality={20}
             className="object-cover w-full h-full group-hover:scale-110 transition-all duration-300 ease-in-out"
           />
         </SwiperSlide>
@@ -91,9 +87,8 @@ export default function App() {
             src={BGImage5.src}
             alt={"Mandir Front View"}
             fill
-            placeholder="blur"
-            blurDataURL="/assets/img/placeholder.jpg"
-            quality={30}
+            loading="lazy"
+            quality={20}
             className="object-cover w-full h-full group-hover:scale-110 transition-all duration-300 ease-in-out"
           />
         </SwiperSlide>
@@ -102,9 +97,8 @@ export default function App() {
             src={BGImage6.src}
             alt={"Mandir Front View"}
             fill
-            placeholder="blur"
-            blurDataURL="/assets/img/placeholder.jpg"
-            quality={30}
+            loading="lazy"
+            quality={20}
             className="object-cover w-full h-full group-hover:scale-110 transition-all duration-300 ease-in-out"
           />
         </SwiperSlide>
@@ -113,9 +107,8 @@ export default function App() {
             src={BGImage7.src}
             alt={"Mandir Front View"}
             fill
-            placeholder="blur"
-            blurDataURL="/assets/img/placeholder.jpg"
-            quality={30}
+            loading="lazy"
+            quality={20}
             className="object-cover w-full h-full group-hover:scale-110 transition-all duration-300 ease-in-out"
           />
         </SwiperSlide>
@@ -124,9 +117,8 @@ export default function App() {
             src={BGImage8.src}
             alt={"Mandir Front View"}
             fill
-            placeholder="blur"
-            blurDataURL="/assets/img/placeholder.jpg"
-            quality={30}
+            loading="lazy"
+            quality={20}
             className="object-cover w-full h-full group-hover:scale-110 transition-all duration-300 ease-in-out"
           />
         </SwiperSlide>
@@ -135,9 +127,8 @@ export default function App() {
             src={BGImage9.src}
             alt={"Mandir Front View"}
             fill
-            placeholder="blur"
-            blurDataURL="/assets/img/placeholder.jpg"
-            quality={30}
+            loading="lazy"
+            quality={20}
             className="object-cover w-full h-full group-hover:scale-110 transition-all duration-300 ease-in-out"
           />
         </SwiperSlide>
