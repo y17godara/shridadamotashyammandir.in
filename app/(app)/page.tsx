@@ -69,8 +69,8 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
                   <section className="relative container px-2.5 sm:px-10 py-10 overflow-y-scroll scrollbar-thin scrollbar-thumb-rose-950 scrollbar-track-rose-900">
                     <div className="flex flex-col text-pretty text-cente gap-4 text-sm md:text-base">
                       <p>
-                        Gaanv ke bujurgon aur sahayogiyon dvaara dee gaee
-                        jaanakaaree ke anusaar daada mota shree shyaam mandir ka
+                        Gaanv ke bujurgon aur sahayogiyon dvaara dee gai
+                        jaanakaaree ke anusaar dada mota shree shyam mandir ka
                         itihaas kaaphee samrddh hai. ve kahate hain ki
                       </p>
                       <p>
@@ -97,7 +97,7 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
                         ke bahar jakar ek jhopadi banai aur wahan ekant mein reh
                         kar tap karne lag gaye. Gaon wale unke tapasvi jivan ko
                         dekhkar unke paas jakar baithne lage aur thoda bahut
-                        kuchh khane ko le jane lage. Samay bita gaya aur baba
+                        kuchh khane ko le jane lage. Samay bitta gaya aur baba
                         gaon walon ki samasyaon ka samadhan karne lage. Bujurg
                         aur swasth hone ke karan gaon walon ne unko "Dada Mota"
                         naam diya.
