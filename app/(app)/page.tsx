@@ -40,7 +40,7 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
                 </h6>
                 <div className="flex flex-col items-start justify-start">
                   <h1 className="text-4xl sm:text-5xl font-bold">
-                    Shri Data Mote Shri Shyam Ji Mandir
+                    Shri Dada Mote Shri Shyam Ji Mandir
                   </h1>
                   <h2 className="">
                     Best Place for you to Seek Blessings and Peace
@@ -50,7 +50,7 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
 
               <div className="flex flex-col items-start justify-start gap-0.5 text-start text-pretty mt-2 lg:mt-4 w-full">
                 <p className="text-sm lg:text-base font-semibold">
-                  Shri Data Mote Shri Shyam Ji Mandir is a Hindu Temple Since
+                  Shri Dada Mote Shri Shyam Ji Mandir is a Hindu Temple Since
                   1800's and is primaryly dedicated to Shri Khatu Shyam Ji. The
                   temple is{" "}
                   <b className="font-bold">
@@ -64,7 +64,7 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
                   beautiful architecture and design.
                 </p>
                 <Readmore
-                  heading={"Shri Data Mote Shri Shyam Ji Mandir History"}
+                  heading={"Shri Dada Mote Shri Shyam Ji Mandir History"}
                 >
                   <section className="relative container px-2.5 sm:px-10 py-10 overflow-y-scroll scrollbar-thin scrollbar-thumb-rose-950 scrollbar-track-rose-900">
                     <div className="flex flex-col text-pretty text-cente gap-4 text-sm md:text-base">
@@ -302,7 +302,7 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
                       </p>
                       <p>
                         <span className="font-semibold">Account Name:</span>{" "}
-                        Shri Data Mota Shri Shyamji Mandir Samiti
+                        Shri Dada Mota Shri Shyamji Mandir Samiti
                       </p>
                       <p>
                         <span className="font-semibold">Account Number:</span>{" "}
