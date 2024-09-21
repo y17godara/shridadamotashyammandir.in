@@ -19,4 +19,4 @@ We appreciate contributions from the community! To get started with contributing
 For more detailed instructions, please refer to the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
 
 ## License
-This project is licensed under the [MIT License](./LICENSE). By contributing to this repository, you agree that your contributions will be licensed under the MIT License as well.
+This project is open source and welcomes contributions! If you choose to fork or use it, please keep it open source and credit this project.
