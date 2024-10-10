@@ -1,4 +1,5 @@
 # Shyam Mandir Website
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=y17godara.shridadamotashyammandir.in)
 
 This is the official repository for the Shyam Mandir Website built using Next.js and Tailwind CSS.
 
