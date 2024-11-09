@@ -19,5 +19,10 @@ This project is a website for the Shyam Mandir. It is designed to be a fast, mod
 We appreciate contributions from the community! To get started with contributing:
 For more detailed instructions, please refer to the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
 
+## Thanks to our Contributors
+You can also view a full list of our [contributors tracked by Github](https://github.com/y17godara/shridadamotashyammandir.in/graphs/contributors).
+
+<img src="https://contributors-img.web.app/image?repo=y17godara/shridadamotashyammandir.in&Date" />
+
 ## License
 This project is open source and welcomes contributions! If you choose to fork or use it, please keep it open source and credit this project.
