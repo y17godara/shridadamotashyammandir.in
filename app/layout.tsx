@@ -4,6 +4,8 @@ import type { Metadata } from "next"
 import "./globals.css"
 
 import { i18n, Locale } from "@/i18n.config"
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google"
+import { Analytics as VercelAnalytics } from "@vercel/analytics/react"
 
 import { fontSans } from "@/config/fonts"
 import { SiteMetadata } from "@/config/site"
@@ -46,8 +48,11 @@ export default function RootLayout({
           {children}
           <TailwindIndicator />
           <ThemeSwitcher />
+          <VercelAnalytics />
         </Provider>
       </body>
+      <GoogleTagManager gtmId={`${process.env.GOOGLE_TAG_MANAGER_ID!}`} />
+      <GoogleAnalytics gaId={`${process.env.GOOGLE_ANALYTICS_ID!}`} />
     </html>
   )
 }
