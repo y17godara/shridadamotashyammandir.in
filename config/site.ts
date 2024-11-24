@@ -37,10 +37,10 @@ const SiteMetadata: Metadata = {
     default: DEFAULT_DATA.name,
     template: `%s | ${DEFAULT_DATA.name}`,
   },
-  description: DEFAULT_DATA.Description,
+  description: `Shri Dada Mota Shyam Ji Mandir is a Hindu temple located in Bharthal Village, Dwarka Sector 26, New Delhi. Also known as Shri Shyam Ji Dada Mota Mandir.`,
   metadataBase: new URL(DEFAULT_DATA.DOMAIN[0]),
   alternates: {
-    canonical: DEFAULT_DATA.DOMAIN[0],
+    canonical: DEFAULT_DATA.DOMAIN[1],
   },
   keywords: [
     "Shri Shyam Ji Dada Mote Mandir",

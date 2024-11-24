@@ -1,24 +1,32 @@
 import { Suspense } from "react"
 import Image from "next/image"
-import Link from "next/link"
+import Script from "next/script"
 import Events, { EventType } from "@/data/events"
-import HeroImages from "@/data/images"
 import { Locale } from "@/i18n.config"
 import { BentoGrid } from "@/ui/bento-grid"
 import { PiBellDuotone } from "react-icons/pi"
 
-import { getDictionary } from "@/lib/dictionary"
+import jsonLDGenerator from "@/config/jsonld"
 import { cn } from "@/lib/utils"
 import GallaryGrid from "@/components/gallary-grid"
 import ImageSlider from "@/components/hero-image"
 import Readmore from "@/components/read-more"
 
-export default async function Page({ params }: { params: { locale: Locale } }) {
-  const dict = await getDictionary(params.locale) // en
-  // return <button>{dict.products.cart}</button> // Add to Cart
+// import { getDictionary } from "@/lib/dictionary"
 
+const jsonLD = jsonLDGenerator.home()
+
+export default async function Page({ params }: { params: { locale: Locale } }) {
+  // const dict = await getDictionary(params.locale) // en
+  // return <button>{dict.products.cart}</button> // Add to Cart
   return (
     <>
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLD),
+        }}
+      />
       <div className="flex flex-col justify-center">
         <Suspense>
           <ImageSlider />
@@ -197,14 +205,14 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
                       Summer
                     </td>
                     <td className="px-4 py-3 font-semibold">Morning</td>
-                    <td className="px-4 py-3">05:00 AM</td>
+                    <td className="px-4 py-3">04:00 AM</td>
                     <td className="px-4 py-3">11:00 AM</td>
                     <td className="px-4 py-3">07:00 AM to 08:00 AM</td>
                   </tr>
                   <tr className="border-b border-rose-950 whitespace-nowrap">
                     <td className="px-4 py-3 font-semibold">Evening</td>
-                    <td className="px-4 py-3">05:00 AM</td>
-                    <td className="px-4 py-3">09:00 PM</td>
+                    <td className="px-4 py-3">05:00 PM</td>
+                    <td className="px-4 py-3">10:00 PM</td>
                     <td className="px-4 py-3">07:00 PM to 08:00 PM</td>
                   </tr>
                   <tr className="border-b border-rose-950 whitespace-nowrap">
@@ -212,18 +220,23 @@ export default async function Page({ params }: { params: { locale: Locale } }) {
                       Winter
                     </td>
                     <td className="px-4 py-3 font-semibold">Morning</td>
-                    <td className="px-4 py-3">06:00 AM</td>
-                    <td className="px-4 py-3">10:00 AM</td>
-                    <td className="px-4 py-3">07:30 AM to 08:30 AM</td>
+                    <td className="px-4 py-3">05:00 AM</td>
+                    <td className="px-4 py-3">11:00 AM</td>
+                    <td className="px-4 py-3">07:00 AM to 08:00 AM</td>
                   </tr>
                   <tr className="border-b border-rose-950 whitespace-nowrap">
                     <td className="px-4 py-3 font-semibold">Evening</td>
                     <td className="px-4 py-3">04:00 PM</td>
                     <td className="px-4 py-3">08:00 PM</td>
-                    <td className="px-4 py-3">06:30 PM to 07:30 PM</td>
+                    <td className="px-4 py-3">06:00 PM to 07:00 PM</td>
                   </tr>
                 </tbody>
               </table>
+              <p className="text-xs lg:text-sm font-semibold mt-2 text-pretty">
+                [{` `}
+                <b className="font-semibold">Note:</b>
+                The temple is open all day on Sundays.{` `}]
+              </p>
             </div>
           </div>
         </section>
